@@ -233,6 +233,11 @@ right connector from last child*/
     background: #bada55;
 }
 
+.tree li a.on-push.checked2 {
+    background: #dac940;
+}
+
+
 .tree li a.on-push.subscriber {
     background: #85A6E8;
 }

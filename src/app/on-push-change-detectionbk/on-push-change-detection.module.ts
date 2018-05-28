@@ -17,7 +17,6 @@ import {ComponentFourteen} from './component-fourteen/component-fourteen.compone
 import {ComponentFiveteen} from './component-fiveteen/component-fiveteen.component';
 import {ComponentSixteen} from './component-sixteen/component-sixteen.component';
 import {ComponentSeventeen} from './component-seventeen/component-seventeen.component';
-import {CommonModule} from "@angular/common";
 
 @NgModule({
     declarations: [
@@ -39,8 +38,7 @@ import {CommonModule} from "@angular/common";
         ComponentFiveteen,
         ComponentSixteen,
         ComponentSeventeen
-    ],
-    imports: [CommonModule]
+    ]
 })
 export class OnPushChangeDetectionModule {
 

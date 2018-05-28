@@ -5,22 +5,19 @@ import {AfterViewChecked, ChangeDetectionStrategy, Component, ElementRef, NgZone
 import {toggleClass} from '../../toggle-class.service';
 
 @Component({
-    selector: 'cmp-five',
+    selector: 'cmp-eight',
     template: `
-        <a class="on-push">Cmp5</a>
+        <a class="on-push">Cmp8</a>
 
         <ul>
             <li>
-                <cmp-ten></cmp-ten>
-            </li>
-            <li>
-                <cmp-eleven></cmp-eleven>
+                <cmp-sixteen></cmp-sixteen>
             </li>
         </ul>
     `,
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ComponentFive implements AfterViewChecked {
+export class ComponentEight implements AfterViewChecked {
 
     constructor(private zone: NgZone, private el: ElementRef) {
     }

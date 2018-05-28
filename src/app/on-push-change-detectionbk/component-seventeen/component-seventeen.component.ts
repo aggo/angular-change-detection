@@ -5,27 +5,18 @@ import {AfterViewChecked, Component, ElementRef, NgZone} from '@angular/core';
 import {toggleClass} from '../../toggle-class.service';
 
 @Component({
-    selector: 'cmp-one',
+    selector: 'cmp-seventeen',
     template: `
-        <a>Cmp1</a>
-
-        <ul>
-            <li>
-                <cmp-two></cmp-two>
-            </li>
-            <li>
-                <cmp-three></cmp-three>
-            </li>
-        </ul>
+        <a>Cmp17</a>
     `
 })
-export class ComponentOne implements AfterViewChecked {
+export class ComponentSeventeen implements AfterViewChecked {
 
     constructor(private zone: NgZone, private el: ElementRef) {
     }
 
     ngAfterViewChecked() {
         toggleClass(this.el, this.zone);
-        console.count('cmp1');
     }
+
 }
